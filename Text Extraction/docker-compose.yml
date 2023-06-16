@@ -1,0 +1,12 @@
+version: '3'
+services:
+  pdf-text-extraction:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./PDFs:/app/PDFs
+      - ./Extracted_Text:/app/Extracted_Text
+    environment:
+      - PDF_DIR=/app/PDFs/
+      - OUTPUT_DIR=/app/Extracted_Text/
