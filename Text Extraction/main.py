@@ -2,7 +2,7 @@ import os
 import pytesseract
 from pdf2image import convert_from_path
 
-pdf_dir = './PDFs/'
+pdf_dir = 'E:/PDF Scraping/PDFs/'
 output_dir = './Extracted Text/'
 os.makedirs(output_dir, exist_ok=True)
 
